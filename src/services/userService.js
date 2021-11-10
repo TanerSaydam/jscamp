@@ -6,7 +6,8 @@ export default class UserService{
     }
 
     add(user){
-        this.users.push(user)        
+        this.users.push(user)
+        this.loggerService.log(user)
     }
 
     list(){
